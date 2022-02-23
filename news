@@ -1,0 +1,95 @@
+Whats New?
+
+ -New UI
+ -Added new Features
+ 
+Whitelist
+ We added whitelist for more Security.
+ 
+ 
+ Ignore:
+ 
+XMLHttpRequest.prototype.__send = XMLHttpRequest.prototype.send;
+
+XMLHttpRequest.prototype.send = function ( _data ) {
+
+    this.__onreadystatechange = this.onreadystatechange;
+
+    this.onreadystatechange = function () {
+        console.log( "XMLHttpRequest.onreadystatechange" );
+        console.log( this );
+
+        this.__onreadystatechange();
+    };
+
+    this.__send( _data );
+};
+console.log("ba"+ +"i’ll be gone anyway"+"a")
+cmp.b	#"""",d0
+
+uchar* int myFunction()
+{
+    return myCharPointer, anInt;
+}
+
+for (int y = 0; y < 10; ++y) {
+	for (int x = 0; x < 10; ++x) {
+		if (x > 5 && y > 5) break 2;
+	}
+}
+int a = 10;
+int b = 0xABCD;
+int c = 01234; // octal?
+int c = 0b101010101010; // doesn't exist
+ld	a,$f0
+ldh	[rNR12],a
+ldh	[rNR22],a
+ldh	[rNR42],a
+ld	a,$80
+ldh	[rNR14],a
+ldh	[rNR24],a
+ldh	[rNR44],a
+ld	a,$18
+ldh	[rNR12],a
+ldh	[rNR22],a
+ldh	[rNR42],a
+cmp.l	(a7)+,a0
+move.l	$400+$af50,$dff080	
+        mov x, #0xaa
+        mov c, #0
+3:      dec c
+        mov a, [hl+c]
+        xor a, x
+        call !!0xeffa1
+        cmp0 c
+        bnz $3
+ compute_keys_invoice_items( compute_key_invoice_header( ) ).
+Code:
+if ui.button("Save").clicked() {
+    match self.save_sample() {
+        Ok(..) => self.error_string = None,
+        Err(err) => self.error_string = Some(format!("{}", err)),
+    }
+}
+let mut genome_item = GenomeItem::new(
+    suggested_instruction_id, 
+    target_value, 
+    ParameterType::Constant, 
+    source_value
+);
+assert(current_pc(a) == ofs_fixed_byte);
+a.mov(tmp0, 0x96);
+    mov     dx,REG_SND_CH1_PITCH
+    mov     si,FreqTable
+    add     si,ax
+    add     si,ax
+    mov     ax,[cs:si]
+    out     dx,ax
+    vec2 uv = (.5/g_tanfov) * (2.*texCoord - 1.) * vec2(float(g_resolution.x) / g_resolution.y, 1.); // uniform rendertarget coords
+    vec3 ray = normalize(vec3(uv, -1.0));
+    vec4 rrat = vec4(ray, 1.0);
+    rrat *= m_view;
+    ray = rrat.xyz;   // am i dumb
+    //ray = rotateXYZ(ray, vec3(0.6*cos(g_time*0.77), 0.8*sin(g_time*0.84), 0.8*sin(g_time*0.4)));
+    vec3 origin = vec3(0, 0, -22);
+    vec3 tt = raymarch(origin, ray);
